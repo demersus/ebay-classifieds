@@ -17,3 +17,9 @@ Description goes here.
 Copyright (c) 2012 Nik Petersen. See LICENSE.txt for
 further details.
 
+== Testing
+
+You must include a yaml file inside the spec/support folder named 'api_credentials.yml'.
+This file will contain two key/value pairs: username, and password. No tests will pass without a valid
+api username and password.
+
