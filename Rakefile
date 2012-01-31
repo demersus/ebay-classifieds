@@ -14,11 +14,11 @@ require 'rake'
 require 'jeweler'
 Jeweler::Tasks.new do |gem|
   # gem is a Gem::Specification... see http://docs.rubygems.org/read/chapter/20 for more options
-  gem.name = "ebay-classifieds-api"
-  gem.homepage = "http://github.com/demersus/ebay-classifieds-api"
+  gem.name = "ebay-classifieds"
+  gem.homepage = "http://github.com/demersus/ebay-classifieds"
   gem.license = "MIT"
-  gem.summary = %Q{TODO: one-line summary of your gem}
-  gem.description = %Q{TODO: longer description of your gem}
+  gem.summary = %Q{an ORM to interface with the ebay classifieds api}
+  gem.description = ""
   gem.email = "demersus@gmail.com"
   gem.authors = ["Nik Petersen"]
   # dependencies defined in Gemfile
@@ -43,7 +43,7 @@ Rake::RDocTask.new do |rdoc|
   version = File.exist?('VERSION') ? File.read('VERSION') : ""
 
   rdoc.rdoc_dir = 'rdoc'
-  rdoc.title = "ebay-classifieds-api #{version}"
+  rdoc.title = "ebay-classifieds #{version}"
   rdoc.rdoc_files.include('README*')
   rdoc.rdoc_files.include('lib/**/*.rb')
 end
