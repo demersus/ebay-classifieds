@@ -2,19 +2,17 @@ require File.expand_path(File.dirname(__FILE__) + '/spec_helper')
 require 'ebay_classifieds/ads'
 
 describe "ads" do
-  it "has a sub module named 'Search'" do
-    EbayClassifieds::Ads.const_defined?(:Search).should be_true
-  end
-  describe "search" do
-    it "as a method named api_get" do
-      EbayClassifieds::Ads::Search.methods.should include(:api_get)
+  describe "#search_raw" do
+    it 'returns a response object' do 
+      resp = EbayClassifieds::Ads.search_raw()
+      resp.class.should be HTTParty::Response
     end
-    describe "#api_get" do
-      context "given valid credentials" do
-        it "it returns an http response object, when given search parameters" do
-          print EbayClassifieds::Ads::Search.api_get({'q' => 'car'})
-        end
-      end
+  end
+  describe "#search" do
+    it 'returns a hash' do
+      resp = EbayClassifieds::Ads.search(:q => 'cats',:size => 5)
+      debugger
+      resp.class.should be Hash
     end
   end
 end

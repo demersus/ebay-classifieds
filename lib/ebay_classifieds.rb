@@ -1,6 +1,3 @@
-require 'json'
-require 'net/http'
-require 'uri'
 module EbayClassifieds
   @@api_url = "http://webapi.ebayclassifieds.com/webapi"
   @@api_username = 'TEST'
@@ -25,11 +22,4 @@ module EbayClassifieds
     @@api_password=p
   end
   
-  def self.api_get(endpoint,params = {})
-    uri = URI.parse(EbayClassifieds.api_url + endpoint + URI.encode_www_form(params))
-    http = Net::HTTP.new(uri.host,uri.port)
-    req = Net::HTTP::Get.new(uri.request_uri)
-    req.basic_auth(@@api_username,@@api_password)
-    http.request(req)
-  end
 end
