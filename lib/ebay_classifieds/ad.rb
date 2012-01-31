@@ -2,6 +2,13 @@ module EbayClassifieds
   module Resources
     class Ad < 
       Struct.new(:price, :locations, :status, :id, :title, :address,:attrubutes, :description, :category, :pictures, :modified_at, :created_at)
+      @@api_endpoint = '/ads.json2'
+      def self.api_endpoint=o
+        @@api_endpoint = o
+      end
+      def self.api_endpoint
+        @@api_endpoint
+      end
       
       def self.new_from_json2(json2)
         new(
@@ -28,7 +35,6 @@ module EbayClassifieds
       def self.attributes_from_json2(json2)
         Hash.new
       end
-        
     end
   end
 end

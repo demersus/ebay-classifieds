@@ -1,11 +1,11 @@
 {
   "RSpec": {
     "coverage": {
-      "/home/nik/Projects/ebay-classifieds-api/lib/ebay-classifieds-api.rb": [
+      "/home/nik/Projects/ebay-classifieds/lib/ebay-classifieds-api.rb": [
         1,
         null
       ],
-      "/home/nik/Projects/ebay-classifieds-api/lib/ebay_classifieds.rb": [
+      "/home/nik/Projects/ebay-classifieds/lib/ebay_classifieds.rb": [
         1,
         1,
         1,
@@ -32,7 +32,7 @@
         null,
         null
       ],
-      "/home/nik/Projects/ebay-classifieds-api/spec/support/load_credentials.rb": [
+      "/home/nik/Projects/ebay-classifieds/spec/support/load_credentials.rb": [
         1,
         1,
         0,
@@ -41,7 +41,34 @@
         1,
         1
       ],
-      "/home/nik/Projects/ebay-classifieds-api/lib/ebay_classifieds/ads.rb": [
+      "/home/nik/Projects/ebay-classifieds/spec/support/load_fixture_data.rb": [
+        1,
+        1,
+        0,
+        0,
+        0,
+        null
+      ],
+      "/home/nik/Projects/ebay-classifieds/spec/ads_spec.rb": [
+        1,
+        1,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        1,
+        0,
+        null,
+        null,
+        null
+      ],
+      "/home/nik/Projects/ebay-classifieds/lib/ebay_classifieds/ads.rb": [
         1,
         1,
         1,
@@ -49,56 +76,28 @@
         0,
         null,
         1,
-        2,
+        1,
         null,
         null,
         1,
-        2,
-        2,
+        1,
+        1,
         null,
         1,
         1,
-        1,
+        0,
         null,
         null
       ],
-      "/home/nik/Projects/ebay-classifieds-api/lib/ebay_classifieds/api_connector.rb": [
+      "/home/nik/Projects/ebay-classifieds/lib/ebay_classifieds/api_connector.rb": [
         1,
         1,
         1,
         1,
         1,
-        null
-      ],
-      "/home/nik/Projects/ebay-classifieds-api/spec/ebay_classifieds_spec.rb": [
-        1,
-        null,
-        1,
-        1,
-        1,
-        1,
-        1,
-        null,
-        1,
-        1,
-        1,
-        1,
-        null,
-        1,
-        1,
-        1,
-        null,
-        1,
-        null,
-        1,
-        1,
-        null,
-        1,
-        1,
-        null,
         null
       ]
     },
-    "timestamp": 1327966254
+    "timestamp": 1328049853
   }
 }

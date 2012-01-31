@@ -16,7 +16,6 @@ describe "EbayClassifieds" do
     EbayClassifieds.api_url.should_not eq @original_api_url
   end
   it "has a configurable username and password" do
-    
     EbayClassifieds.api_username = '123'
     EbayClassifieds.api_username.should_not eq @original_username
     

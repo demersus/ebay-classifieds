@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html xmlns='http://www.w3.org/1999/xhtml'>
   <head>
-    <title>Code coverage for Ebay-classifieds-api</title>
+    <title>Code coverage for Ebay-classifieds</title>
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <script src='./assets/0.5.3/jquery-1.6.2.min.js' type='text/javascript'></script>
     <script src='./assets/0.5.3/jquery.dataTables.min.js' type='text/javascript'></script>   
@@ -14,7 +14,7 @@
     <link href='./assets/0.5.3/highlight.css' media='screen, projection, print' rel='stylesheet' type='text/css'>
     <link href='./assets/0.5.3/fancybox/jquery.fancybox-1.3.1.css' media='screen, projection, print' rel='stylesheet' type='text/css'>
     <link href='./assets/0.5.3/smoothness/jquery-ui-1.8.4.custom.css' media='screen, projection, print' rel='stylesheet' type='text/css'>    
-    <link rel="shortcut icon" type="image/png" href="./assets/0.5.3/favicon_green.png" />
+    <link rel="shortcut icon" type="image/png" href="./assets/0.5.3/favicon_yellow.png" />
     <link rel="icon" type="image/png" href="./assets/0.5.3/favicon.png" />
   </head>
   
@@ -23,27 +23,27 @@
       <img src="./assets/0.5.3/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2012-01-30T15:30:54-08:00">2012-01-30T15:30:54-08:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2012-01-31T14:44:13-08:00">2012-01-31T14:44:13-08:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
         <div class="file_list_container" id="AllFiles">
   <h2>
     <span class="group_name">All Files</span>
-    (<span class="covered_percent"><span class="green">96.61%</span></span>
+    (<span class="covered_percent"><span class="yellow">87.72%</span></span>
      covered at
      <span class="covered_strength">
-       <span class="green">
-         1.12
+       <span class="red">
+         0.94
        </span>
     </span> hits/line)
   </h2>
   <a name="AllFiles"></a>
   <div>
-    <b>6</b> files in total.
-    <b>59</b> relevant lines. 
-    <span class="green"><b>57</b> lines covered</span> and
-    <span class="red"><b>2</b> lines missed </span>
+    <b>7</b> files in total.
+    <b>57</b> relevant lines. 
+    <span class="green"><b>50</b> lines covered</span> and
+    <span class="red"><b>7</b> lines missed </span>
   </div>
   <table class="file_list">
     <thead>
@@ -60,7 +60,7 @@
     <tbody>
       
       <tr>
-        <td class="strong"><a href="#4347fb0457b63165042cf751a2d9f72dfdb3673e" class="src_link" title="lib/ebay-classifieds-api.rb">lib/ebay-classifieds-api.rb</a></td>
+        <td class="strong"><a href="#9d733657d8111b9dc91d61d732653333a2477349" class="src_link" title="lib/ebay-classifieds-api.rb">lib/ebay-classifieds-api.rb</a></td>
         <td class="green strong">100.0 %</td>
         <td>2</td>
         <td>1</td>
@@ -70,7 +70,7 @@
       </tr>
       
       <tr>
-        <td class="strong"><a href="#3a564e616ee7a45b726f6a4bef4268d840b792cb" class="src_link" title="lib/ebay_classifieds.rb">lib/ebay_classifieds.rb</a></td>
+        <td class="strong"><a href="#f9dc6044430916f04b5b165685ae3dd77c244928" class="src_link" title="lib/ebay_classifieds.rb">lib/ebay_classifieds.rb</a></td>
         <td class="green strong">100.0 %</td>
         <td>25</td>
         <td>16</td>
@@ -80,17 +80,17 @@
       </tr>
       
       <tr>
-        <td class="strong"><a href="#db4263797ddce4cf6745d233bca6c273e7669b20" class="src_link" title="lib/ebay_classifieds/ads.rb">lib/ebay_classifieds/ads.rb</a></td>
-        <td class="green strong">92.31 %</td>
+        <td class="strong"><a href="#a0823eca15c885b3a8cbd869b2ac339701a44cc0" class="src_link" title="lib/ebay_classifieds/ads.rb">lib/ebay_classifieds/ads.rb</a></td>
+        <td class="yellow strong">84.62 %</td>
         <td>19</td>
         <td>13</td>
-        <td>12</td>
-        <td>1</td>
-        <td>1.2</td>
+        <td>11</td>
+        <td>2</td>
+        <td>0.8</td>
       </tr>
       
       <tr>
-        <td class="strong"><a href="#c439195c178df047645fd700964501ef13b8c1d2" class="src_link" title="lib/ebay_classifieds/api_connector.rb">lib/ebay_classifieds/api_connector.rb</a></td>
+        <td class="strong"><a href="#fc997958424ed39602e71d431734934a2f78cbef" class="src_link" title="lib/ebay_classifieds/api_connector.rb">lib/ebay_classifieds/api_connector.rb</a></td>
         <td class="green strong">100.0 %</td>
         <td>6</td>
         <td>5</td>
@@ -100,23 +100,33 @@
       </tr>
       
       <tr>
-        <td class="strong"><a href="#7bc4f8f94d487d1212e74a87501b5a6e101c8cdb" class="src_link" title="spec/ebay_classifieds_spec.rb">spec/ebay_classifieds_spec.rb</a></td>
-        <td class="green strong">100.0 %</td>
-        <td>26</td>
-        <td>18</td>
-        <td>18</td>
-        <td>0</td>
-        <td>1.0</td>
+        <td class="strong"><a href="#3c85f724fff5e5f25fdfbae2e1bef3938b96089b" class="src_link" title="spec/ads_spec.rb">spec/ads_spec.rb</a></td>
+        <td class="green strong">90.91 %</td>
+        <td>17</td>
+        <td>11</td>
+        <td>10</td>
+        <td>1</td>
+        <td>0.9</td>
       </tr>
       
       <tr>
-        <td class="strong"><a href="#b00ff755078a9872b7a1c542459db79699dbafc5" class="src_link" title="spec/support/load_credentials.rb">spec/support/load_credentials.rb</a></td>
+        <td class="strong"><a href="#1f00a43f85e11b7b9d7f9d8744d79a23587269b6" class="src_link" title="spec/support/load_credentials.rb">spec/support/load_credentials.rb</a></td>
         <td class="yellow strong">83.33 %</td>
         <td>7</td>
         <td>6</td>
         <td>5</td>
         <td>1</td>
         <td>0.8</td>
+      </tr>
+      
+      <tr>
+        <td class="strong"><a href="#07e14f58e156e1e58145aea7328d1405b8b41119" class="src_link" title="spec/support/load_fixture_data.rb">spec/support/load_fixture_data.rb</a></td>
+        <td class="red strong">40.0 %</td>
+        <td>6</td>
+        <td>5</td>
+        <td>2</td>
+        <td>3</td>
+        <td>0.4</td>
       </tr>
       
     </tbody>
@@ -135,7 +145,7 @@
     
       <div class="source_files">
       
-        <div class="source_table" id="4347fb0457b63165042cf751a2d9f72dfdb3673e">
+        <div class="source_table" id="9d733657d8111b9dc91d61d732653333a2477349">
   <div class="header">
     <h3>lib/ebay-classifieds-api.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
@@ -165,7 +175,7 @@
   </pre>
 </div>
       
-        <div class="source_table" id="3a564e616ee7a45b726f6a4bef4268d840b792cb">
+        <div class="source_table" id="f9dc6044430916f04b5b165685ae3dd77c244928">
   <div class="header">
     <h3>lib/ebay_classifieds.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
@@ -333,14 +343,14 @@
   </pre>
 </div>
       
-        <div class="source_table" id="db4263797ddce4cf6745d233bca6c273e7669b20">
+        <div class="source_table" id="a0823eca15c885b3a8cbd869b2ac339701a44cc0">
   <div class="header">
     <h3>lib/ebay_classifieds/ads.rb</h3>
-    <h4><span class="green">92.31 %</span> covered</h4>
+    <h4><span class="yellow">84.62 %</span> covered</h4>
     <div>
       <b>13</b> relevant lines. 
-      <span class="green"><b>12</b> lines covered</span> and
-      <span class="red"><b>1</b> lines missed.</span>
+      <span class="green"><b>11</b> lines covered</span> and
+      <span class="red"><b>2</b> lines missed.</span>
     </div>
   </div>
   
@@ -389,8 +399,8 @@
           <code class="ruby">  def self.api_endpoint</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="8">
-          <span class="hits">2</span>
+        <li class="covered" data-hits="1" data-linenumber="8">
+          <span class="hits">1</span>
           
           <code class="ruby">    @@api_endpoint</code>
         </li>
@@ -410,17 +420,17 @@
         <li class="covered" data-hits="1" data-linenumber="11">
           <span class="hits">1</span>
           
-          <code class="ruby">  def self.search_raw(opts = {})</code>
+          <code class="ruby">  def self.raw_search(opts = {})</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="12">
-          <span class="hits">2</span>
+        <li class="covered" data-hits="1" data-linenumber="12">
+          <span class="hits">1</span>
           
           <code class="ruby">    c = EbayClassifieds::ApiConnector</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="13">
-          <span class="hits">2</span>
+        <li class="covered" data-hits="1" data-linenumber="13">
+          <span class="hits">1</span>
           
           <code class="ruby">    c.get(api_endpoint,:query =&gt; opts)</code>
         </li>
@@ -443,8 +453,8 @@
           <code class="ruby">    resp = search_raw(opts)</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="17">
-          <span class="hits">1</span>
+        <li class="missed" data-hits="0" data-linenumber="17">
+          
           
           <code class="ruby">    resp.parsed_response</code>
         </li>
@@ -465,7 +475,7 @@
   </pre>
 </div>
       
-        <div class="source_table" id="c439195c178df047645fd700964501ef13b8c1d2">
+        <div class="source_table" id="fc997958424ed39602e71d431734934a2f78cbef">
   <div class="header">
     <h3>lib/ebay_classifieds/api_connector.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
@@ -519,14 +529,14 @@
   </pre>
 </div>
       
-        <div class="source_table" id="7bc4f8f94d487d1212e74a87501b5a6e101c8cdb">
+        <div class="source_table" id="3c85f724fff5e5f25fdfbae2e1bef3938b96089b">
   <div class="header">
-    <h3>spec/ebay_classifieds_spec.rb</h3>
-    <h4><span class="green">100.0 %</span> covered</h4>
+    <h3>spec/ads_spec.rb</h3>
+    <h4><span class="green">90.91 %</span> covered</h4>
     <div>
-      <b>18</b> relevant lines. 
-      <span class="green"><b>18</b> lines covered</span> and
-      <span class="red"><b>0</b> lines missed.</span>
+      <b>11</b> relevant lines. 
+      <span class="green"><b>10</b> lines covered</span> and
+      <span class="red"><b>1</b> lines missed.</span>
     </div>
   </div>
   
@@ -539,151 +549,97 @@
           <code class="ruby">require File.expand_path(File.dirname(__FILE__) + '/spec_helper')</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="2">
+        <li class="covered" data-hits="1" data-linenumber="2">
+          <span class="hits">1</span>
+          
+          <code class="ruby">require 'ebay_classifieds/ads'</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="3">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="3">
-          <span class="hits">1</span>
-          
-          <code class="ruby">describe &quot;EbayClassifieds&quot; do</code>
-        </li>
-      
         <li class="covered" data-hits="1" data-linenumber="4">
           <span class="hits">1</span>
           
-          <code class="ruby">  before :all do</code>
+          <code class="ruby">describe &quot;ads&quot; do</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="5">
           <span class="hits">1</span>
           
-          <code class="ruby">    @original_api_url = EbayClassifieds.api_url</code>
+          <code class="ruby">  describe &quot;#raw_search&quot; do</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="6">
           <span class="hits">1</span>
           
-          <code class="ruby">    @original_password = EbayClassifieds.api_password</code>
+          <code class="ruby">    it 'returns a hash' do </code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="7">
           <span class="hits">1</span>
           
-          <code class="ruby">    @original_username = EbayClassifieds.api_username</code>
+          <code class="ruby">      resp = EbayClassifieds::Ads.raw_search(:q =&gt; 'cats',:size =&gt; 5)</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="8">
+        <li class="covered" data-hits="1" data-linenumber="8">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      resp.class.should be Hash</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="9">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="10">
           
           
           <code class="ruby">  end</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="9">
-          <span class="hits">1</span>
-          
-          <code class="ruby">  after :all do</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="10">
-          <span class="hits">1</span>
-          
-          <code class="ruby">    EbayClassifieds.api_url = @original_api_url</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="11">
           <span class="hits">1</span>
           
-          <code class="ruby">    EbayClassifieds.api_username = @original_username</code>
+          <code class="ruby">  describe &quot;#search&quot; do</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="12">
           <span class="hits">1</span>
           
-          <code class="ruby">    EbayClassifieds.api_password = @original_password</code>
+          <code class="ruby">    it 'returns a paginated collection object ' do</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="13">
+        <li class="covered" data-hits="1" data-linenumber="13">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      resp = EbayClassifieds::Ads.search(:q =&gt; 'cats',:size =&gt; 5)</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="14">
+          
+          
+          <code class="ruby">      resp.class.should be EbayClassifieds::PaginatedCollection</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="15">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="16">
           
           
           <code class="ruby">  end</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="14">
-          <span class="hits">1</span>
-          
-          <code class="ruby">  it &quot;has a configurable api url&quot; do</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="15">
-          <span class="hits">1</span>
-          
-          <code class="ruby">    EbayClassifieds.api_url = '/fu'</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="16">
-          <span class="hits">1</span>
-          
-          <code class="ruby">    EbayClassifieds.api_url.should_not eq @original_api_url</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="17">
-          
-          
-          <code class="ruby">  end</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="18">
-          <span class="hits">1</span>
-          
-          <code class="ruby">  it &quot;has a configurable username and password&quot; do</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="19">
-          
-          
-          <code class="ruby">    </code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="20">
-          <span class="hits">1</span>
-          
-          <code class="ruby">    EbayClassifieds.api_username = '123'</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="21">
-          <span class="hits">1</span>
-          
-          <code class="ruby">    EbayClassifieds.api_username.should_not eq @original_username</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="22">
-          
-          
-          <code class="ruby">    </code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="23">
-          <span class="hits">1</span>
-          
-          <code class="ruby">    EbayClassifieds.api_password = 'abc'</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="24">
-          <span class="hits">1</span>
-          
-          <code class="ruby">    EbayClassifieds.api_password.should_not eq @original_password</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="25">
-          
-          
-          <code class="ruby">  end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="26">
           
           
           <code class="ruby">end</code>
@@ -693,7 +649,7 @@
   </pre>
 </div>
       
-        <div class="source_table" id="b00ff755078a9872b7a1c542459db79699dbafc5">
+        <div class="source_table" id="1f00a43f85e11b7b9d7f9d8744d79a23587269b6">
   <div class="header">
     <h3>spec/support/load_credentials.rb</h3>
     <h4><span class="yellow">83.33 %</span> covered</h4>
@@ -747,6 +703,60 @@
           <span class="hits">1</span>
           
           <code class="ruby">EbayClassifieds.api_password = config['password']</code>
+        </li>
+      
+    </ol>
+  </pre>
+</div>
+      
+        <div class="source_table" id="07e14f58e156e1e58145aea7328d1405b8b41119">
+  <div class="header">
+    <h3>spec/support/load_fixture_data.rb</h3>
+    <h4><span class="red">40.0 %</span> covered</h4>
+    <div>
+      <b>5</b> relevant lines. 
+      <span class="green"><b>2</b> lines covered</span> and
+      <span class="red"><b>3</b> lines missed.</span>
+    </div>
+  </div>
+  
+  <pre>
+    <ol>
+      
+        <li class="covered" data-hits="1" data-linenumber="1">
+          <span class="hits">1</span>
+          
+          <code class="ruby">require 'yaml'</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="2">
+          <span class="hits">1</span>
+          
+          <code class="ruby">def load_fixture_data(name,key)</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="3">
+          
+          
+          <code class="ruby">  file_to_load = File.join(File.dirname(__FILE__),'fixtures',&quot;#{name}.yml&quot;)</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="4">
+          
+          
+          <code class="ruby">  data = YAML.load_file file_to_load</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="5">
+          
+          
+          <code class="ruby">  data[key]</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="6">
+          
+          
+          <code class="ruby">end</code>
         </li>
       
     </ol>

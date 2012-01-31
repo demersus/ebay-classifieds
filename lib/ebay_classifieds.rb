@@ -1,3 +1,5 @@
+
+
 module EbayClassifieds
   @@api_url = "http://webapi.ebayclassifieds.com/webapi"
   @@api_username = 'TEST'
