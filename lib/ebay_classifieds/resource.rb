@@ -12,7 +12,7 @@ module EbayClassifieds
         @@api_endpoint = ep
       end
       def search(params = {})
-        return EbayClassifieds::PaginatedCollection.new
+        
       end
     end
   end
