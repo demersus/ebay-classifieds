@@ -5,7 +5,7 @@ require 'simplecov'
 SimpleCov.start
 
 require 'rspec'
-require 'ebay-classifieds-api'
+require 'ebay_classifieds'
 require 'yaml'
 require 'ruby-debug'
 
