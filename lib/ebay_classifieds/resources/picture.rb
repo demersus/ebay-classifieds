@@ -1,15 +1,20 @@
 module EbayClassifieds
   module Resources
     class Picture < Struct.new(:thumbnail,:teaser,:normal,:large,:extra_large)
-      def self.new_from_json2(json2)
-        data = json2['link']
-        new(
-          :thumbnail => data.select{|h| h['@rel'] == 'thumbnail'}['@href'],
-          :teaser => data.select{|h| h['@rel'] == 'teaser'}['@href'],
-          :normail => data.select{|h| h['@rel'] == 'normal'}['@href'],
-          :large => data.select{|h| h['@rel'] == 'large'}['@href'],
-          :extra_large => data.select{|h| h['@rel'] == 'extra-large'}['@href']
-        )
+      def self.new_from_api_data(data) 
+        #begin
+          link = data['link']
+          
+          new(
+            :thumbnail => (link.select{|h| h['rel'] == 'thumbnail'}.first || {})['href'],
+            :teaser => (link.select{|h| h['@rel'] == 'teaser'}.first ||{})['href'],
+            :normail => (link.select{|h| h['rel'] == 'normal'}.first || {})['href'],
+            :large => (link.select{|h| h['rel'] == 'large'}.first || {})['href'],
+            :extra_large => (link.select{|h| h['rel'] == 'extra-large'}.first || {})['href']
+          )
+        #rescue
+        #  debugger
+        #end
       end      
     end
   end

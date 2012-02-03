@@ -1,5 +1,3 @@
-require 'ebay_classifieds/paginated_collection'
-require 'ebay_classifieds/api_connection'
 module EbayClassifieds
   module Resource
     def self.included(base)
@@ -11,8 +9,8 @@ module EbayClassifieds
         return @@api_endpoint unless ep
         @@api_endpoint = ep
       end
-      def search(params = {})
-        
+      def call_api(verb,params = {})
+        EbayClassifieds::ApiConnection.send(verb,api_endpoint,params)
       end
     end
   end

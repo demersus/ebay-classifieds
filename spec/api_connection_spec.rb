@@ -1,16 +1,26 @@
 require File.expand_path(File.dirname(__FILE__) + '/spec_helper')
-require 'ebay_classifieds/api_connection'
 
-describe 'api_connection' do
+describe EbayClassifieds::ApiConnection do
+  
+  #its(:base_uri){should == EbayClassifieds.api_url}
+  
   describe "#get" do
-    context "Given a Valid uri endpoint" do
-      before :all do 
-        @uri_endpoint = '/ads.xml'
+    context "Given an api path" do
+      before do 
+        @api_path = '/ads/1.xml'
+        @url = EbayClassifieds.api_url + @api_path
+        stub_api_response(:get, @url,:body =>file_fixture('ad-1_picture.xml'),:content_type => 'text/xml')
       end
-      it 'returns a HTTParty response object' do
-        r = EbayClassifieds::ApiConnection.get(@uri_endpoint)
-        r.class.should be HTTParty::Response
+      
+      let(:response) { EbayClassifieds::ApiConnection.get(@api_path) }
+      specify "Api should receive a GET request" do
+        FakeApi.any_instance.should_receive(:call).with(:env)
+        response
       end
+      specify { response.code.should be 200 }       
+      specify { response.class.should be HTTParty::Response }
+      specify { response.parsed_response.should be_a Hash }
+      
     end 
   end
 end
