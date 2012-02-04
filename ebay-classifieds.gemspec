@@ -77,7 +77,7 @@ Gem::Specification.new do |s|
     "coverage/assets/0.5.3/stylesheet.css",
     "coverage/index.html",
     "ebay-classifieds.gemspec",
-    "lib/ebay_classifieds.rb",
+    "lib/ebay-classifieds.rb",
     "lib/ebay_classifieds/api_connection.rb",
     "lib/ebay_classifieds/api_resource.rb",
     "lib/ebay_classifieds/ebay_classifieds.rb",
