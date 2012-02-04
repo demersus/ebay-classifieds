@@ -4,14 +4,17 @@ module EbayClassifieds
       def self.new_from_api_data(data) 
         #begin
           link = data['link']
-          
-          new(
-            :thumbnail => (link.select{|h| h['rel'] == 'thumbnail'}.first || {})['href'],
-            :teaser => (link.select{|h| h['@rel'] == 'teaser'}.first ||{})['href'],
-            :normail => (link.select{|h| h['rel'] == 'normal'}.first || {})['href'],
-            :large => (link.select{|h| h['rel'] == 'large'}.first || {})['href'],
-            :extra_large => (link.select{|h| h['rel'] == 'extra-large'}.first || {})['href']
-          )
+          if link
+            new(
+              :thumbnail => (link.select{|h| h['rel'] == 'thumbnail'}.first || {})['href'],
+              :teaser => (link.select{|h| h['@rel'] == 'teaser'}.first ||{})['href'],
+              :normail => (link.select{|h| h['rel'] == 'normal'}.first || {})['href'],
+              :large => (link.select{|h| h['rel'] == 'large'}.first || {})['href'],
+              :extra_large => (link.select{|h| h['rel'] == 'extra-large'}.first || {})['href']
+            )
+          else 
+            nil
+          end
         #rescue
         #  debugger
         #end

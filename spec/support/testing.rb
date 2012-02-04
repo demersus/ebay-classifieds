@@ -5,7 +5,9 @@ module EbayClassifieds
     end
     def stub_api_response(verb,url,opts = {})
       disable_digest_auth
-      stub_request(verb,url).to_rack(FakeApi.new(opts))
+      api = FakeApi.new(opts)
+      stub_request(verb,url).to_rack(api)
+      api # return instance
     end
     
     
@@ -19,8 +21,13 @@ module EbayClassifieds
           'Content-Length' => body.length.to_s
         }
       end
-      def call(env)
+      def response
+        # Extracted for message testing in rspec
+        # inst.should_receive(:call){|env| ... test input ... }.and_return(inst.response)
         [@response_code,@headers,[@body]]
+      end
+      def call(env)
+        response
       end
       def body=(b)
         @headers['Content-Length'] = body.length.to_s
