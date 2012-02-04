@@ -1,5 +1,5 @@
 module EbayClassifieds
-  module Resources
+  module Models
     class Picture < Struct.new(:thumbnail,:teaser,:normal,:large,:extra_large)
       def self.new_from_api_data(data) 
         #begin

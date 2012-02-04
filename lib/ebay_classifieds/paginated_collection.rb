@@ -4,9 +4,9 @@ module EbayClassifieds
     attr_reader :collection, :per, :total, :page
     def initialize(collection = [], pagination = {} )
       @collection = collection
-      @per = pagination['per'] || 1
-      @page = pagination['page'] || 1
-      @total = pagination['total'] || 0
+      @per = pagination[:per] || 1
+      @page = pagination[:page] || 1
+      @total = pagination[:total] || 0
     end
     def each(&block)
       @collection.each{|i| yield i}

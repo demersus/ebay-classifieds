@@ -1,5 +1,5 @@
 module EbayClassifieds
-  module Resources
+  module Models
     class AdAddress 
       attr_accessor(:street,:city,:state,:zip_code,:longitude,:latitude)
     

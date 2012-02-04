@@ -1,6 +1,5 @@
-require 'ebay_classifieds/resources/ad_attribute'
 module EbayClassifieds
-  module Resources
+  module Models
     class AdAttributes
       attr_reader :raw_attributes
       def initialize(data)
@@ -14,14 +13,10 @@ module EbayClassifieds
         new(data)
       end
       
-      def method_missing(name,args)
-        attr = @raw_attributes[name.replace('=','')]
+      def [](attr_name)
+        attr = @raw_attributes[attr_name]
         return nil unless attr
-        if name.ends_with?('=') 
-          attr.value = args
-        else
-          attr.value 
-        end
+        attr.value
       end
     end
   end
