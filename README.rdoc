@@ -1,8 +1,13 @@
-= ebay-classifieds-api
+= ebay-classifieds
 
-Description goes here.
+An orm wrapper to the ebay classifieds Api.
 
-== Contributing to ebay-classifieds-api
+== Instructions
+
+As this gem gets developed, I will update this section. It is currently in Alpha development. EXPECT CHANGES TO THE API
+
+
+== Contributing to ebay-classifieds
  
 * Check out the latest master to make sure the feature hasn't been implemented or the bug hasn't been fixed yet.
 * Check out the issue tracker to make sure someone already hasn't requested it and/or contributed it.

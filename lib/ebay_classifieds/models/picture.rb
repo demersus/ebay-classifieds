@@ -1,6 +1,8 @@
 module EbayClassifieds
   module Models
-    class Picture < Struct.new(:thumbnail,:teaser,:normal,:large,:extra_large)
+    class Picture 
+      attr_accessor(:thumbnail,:teaser,:normal,:large,:extra_large)
+      include AttributeInitializer
       def self.new_from_api_data(data) 
         #begin
           link = data['link']
