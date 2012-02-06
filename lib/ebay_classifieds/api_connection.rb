@@ -1,28 +1,16 @@
 require 'httparty'
 class EbayClassifieds::ApiConnection
   include HTTParty
-  def self.setup_defaults
-    digest_auth EbayClassifieds.api_username, EbayClassifieds.api_password
-    base_uri EbayClassifieds.api_url
+  
+  # Merge settings from base module
+  def self.default_options
+    (@default_options || {}).merge({
+      :base_uri => EbayClassifieds.api_url,
+      :digest_auth => {
+        :username => EbayClassifieds.api_username,
+        :password => EbayClassifieds.api_password
+      }
+    })
   end
-  def self.get(*args)
-    setup_defaults
-    super(*args)
-  end
-  def self.head(*args)
-    setup_defaults
-    super(*args)
-  end
-  def self.put(*args)
-    setup_defaults
-    super(*args)
-  end
-  def self.post(*args)
-    setup_defaults
-    super(*args)
-  end
-  def self.delete(*args)
-    setup_defaults
-    super(*args)
-  end
+  
 end

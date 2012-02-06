@@ -9,8 +9,7 @@ require 'yaml'
 require 'ruby-debug'
 require 'webmock/rspec'
 require 'rack'
-
-require 'ebay_classifieds'
+require 'ebay-classifieds'
 
 def file_fixture(filename)
   open(File.join(File.dirname(__FILE__), 'fixtures', "#{filename.to_s}")).read

@@ -23,26 +23,26 @@
       <img src="./assets/0.5.3/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2012-02-04T00:20:51-08:00">2012-02-04T00:20:51-08:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2012-02-06T10:38:40-08:00">2012-02-06T10:38:40-08:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
         <div class="file_list_container" id="AllFiles">
   <h2>
     <span class="group_name">All Files</span>
-    (<span class="covered_percent"><span class="green">96.83%</span></span>
+    (<span class="covered_percent"><span class="green">97.32%</span></span>
      covered at
      <span class="covered_strength">
        <span class="green">
-         167.37
+         156.63
        </span>
     </span> hits/line)
   </h2>
   <a name="AllFiles"></a>
   <div>
-    <b>14</b> files in total.
-    <b>252</b> relevant lines. 
-    <span class="green"><b>244</b> lines covered</span> and
+    <b>15</b> files in total.
+    <b>299</b> relevant lines. 
+    <span class="green"><b>291</b> lines covered</span> and
     <span class="red"><b>8</b> lines missed </span>
   </div>
   <table class="file_list">
@@ -60,7 +60,7 @@
     <tbody>
       
       <tr>
-        <td class="strong"><a href="#f9dc6044430916f04b5b165685ae3dd77c244928" class="src_link" title="lib/ebay_classifieds.rb">lib/ebay_classifieds.rb</a></td>
+        <td class="strong"><a href="#e7f52e83bc6066a6ce79dcc570c3d7749629f5f7" class="src_link" title="lib/ebay-classifieds.rb">lib/ebay-classifieds.rb</a></td>
         <td class="green strong">100.0 %</td>
         <td>11</td>
         <td>10</td>
@@ -72,21 +72,21 @@
       <tr>
         <td class="strong"><a href="#5ecadd66f18586d49151196f96795aa1804aced9" class="src_link" title="lib/ebay_classifieds/api_connection.rb">lib/ebay_classifieds/api_connection.rb</a></td>
         <td class="green strong">100.0 %</td>
-        <td>6</td>
+        <td>16</td>
         <td>5</td>
         <td>5</td>
         <td>0</td>
-        <td>1.0</td>
+        <td>4.2</td>
       </tr>
       
       <tr>
         <td class="strong"><a href="#d0a2640ae99202069924e94bd45de05ba90429a5" class="src_link" title="lib/ebay_classifieds/api_resource.rb">lib/ebay_classifieds/api_resource.rb</a></td>
         <td class="green strong">100.0 %</td>
-        <td>29</td>
-        <td>18</td>
-        <td>18</td>
+        <td>34</td>
+        <td>22</td>
+        <td>22</td>
         <td>0</td>
-        <td>5.4</td>
+        <td>7.9</td>
       </tr>
       
       <tr>
@@ -96,17 +96,17 @@
         <td>16</td>
         <td>16</td>
         <td>0</td>
-        <td>1.8</td>
+        <td>5.1</td>
       </tr>
       
       <tr>
         <td class="strong"><a href="#730892bedd70204dd5646806e5af6c1888953e9d" class="src_link" title="lib/ebay_classifieds/models/ad.rb">lib/ebay_classifieds/models/ad.rb</a></td>
-        <td class="green strong">97.22 %</td>
-        <td>68</td>
+        <td class="green strong">97.3 %</td>
+        <td>69</td>
+        <td>37</td>
         <td>36</td>
-        <td>35</td>
         <td>1</td>
-        <td>187.0</td>
+        <td>182.0</td>
       </tr>
       
       <tr>
@@ -172,11 +172,21 @@
       <tr>
         <td class="strong"><a href="#d5b738a056b07621343650d3033afffc4f66edb0" class="src_link" title="spec/api_connection_spec.rb">spec/api_connection_spec.rb</a></td>
         <td class="green strong">100.0 %</td>
-        <td>39</td>
-        <td>23</td>
-        <td>23</td>
+        <td>64</td>
+        <td>40</td>
+        <td>40</td>
         <td>0</td>
-        <td>1.3</td>
+        <td>1.4</td>
+      </tr>
+      
+      <tr>
+        <td class="strong"><a href="#19cfa940740cec70b826fda616fbdb4c2eb25f2b" class="src_link" title="spec/api_resource_spec.rb">spec/api_resource_spec.rb</a></td>
+        <td class="green strong">100.0 %</td>
+        <td>38</td>
+        <td>25</td>
+        <td>25</td>
+        <td>0</td>
+        <td>2.1</td>
       </tr>
       
       <tr>
@@ -215,9 +225,9 @@
     
       <div class="source_files">
       
-        <div class="source_table" id="f9dc6044430916f04b5b165685ae3dd77c244928">
+        <div class="source_table" id="e7f52e83bc6066a6ce79dcc570c3d7749629f5f7">
   <div class="header">
-    <h3>lib/ebay_classifieds.rb</h3>
+    <h3>lib/ebay-classifieds.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
     <div>
       <b>10</b> relevant lines. 
@@ -331,19 +341,79 @@
           <code class="ruby">  include HTTParty</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="4">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="4">
           
-          <code class="ruby">  digest_auth EbayClassifieds.api_username, EbayClassifieds.api_password</code>
+          
+          <code class="ruby">  </code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="5">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="5">
           
-          <code class="ruby">  base_uri EbayClassifieds.api_url</code>
+          
+          <code class="ruby">  # Merge settings from base module</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="6">
+        <li class="covered" data-hits="1" data-linenumber="6">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def self.default_options</code>
+        </li>
+      
+        <li class="covered" data-hits="17" data-linenumber="7">
+          <span class="hits">17</span>
+          
+          <code class="ruby">    (@default_options || {}).merge({</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="8">
+          
+          
+          <code class="ruby">      :base_uri =&gt; EbayClassifieds.api_url,</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="9">
+          
+          
+          <code class="ruby">      :digest_auth =&gt; {</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="10">
+          
+          
+          <code class="ruby">        :username =&gt; EbayClassifieds.api_username,</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="11">
+          
+          
+          <code class="ruby">        :password =&gt; EbayClassifieds.api_password</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="12">
+          
+          
+          <code class="ruby">      }</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="13">
+          
+          
+          <code class="ruby">    })</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="14">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="15">
+          
+          
+          <code class="ruby">  </code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="16">
           
           
           <code class="ruby">end</code>
@@ -358,8 +428,8 @@
     <h3>lib/ebay_classifieds/api_resource.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
     <div>
-      <b>18</b> relevant lines. 
-      <span class="green"><b>18</b> lines covered</span> and
+      <b>22</b> relevant lines. 
+      <span class="green"><b>22</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
   </div>
@@ -385,8 +455,8 @@
           <code class="ruby">    def self.included(base)</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="4">
-          <span class="hits">1</span>
+        <li class="covered" data-hits="5" data-linenumber="4">
+          <span class="hits">5</span>
           
           <code class="ruby">      base.extend ClassMethods</code>
         </li>
@@ -415,14 +485,14 @@
           <code class="ruby">      def api_path(ep = nil)</code>
         </li>
       
-        <li class="covered" data-hits="18" data-linenumber="9">
-          <span class="hits">18</span>
+        <li class="covered" data-hits="22" data-linenumber="9">
+          <span class="hits">22</span>
           
           <code class="ruby">        return @@api_path unless ep</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="10">
-          <span class="hits">1</span>
+        <li class="covered" data-hits="5" data-linenumber="10">
+          <span class="hits">5</span>
           
           <code class="ruby">        @@api_path = ep</code>
         </li>
@@ -436,85 +506,85 @@
         <li class="covered" data-hits="1" data-linenumber="12">
           <span class="hits">1</span>
           
-          <code class="ruby">      def api_path_join(a,b = nil)</code>
+          <code class="ruby">      def api_format(f = nil)</code>
         </li>
       
-        <li class="covered" data-hits="12" data-linenumber="13">
-          <span class="hits">12</span>
+        <li class="covered" data-hits="21" data-linenumber="13">
+          <span class="hits">21</span>
           
-          <code class="ruby">        path = api_path</code>
+          <code class="ruby">        return @@api_format unless f</code>
         </li>
       
-        <li class="covered" data-hits="12" data-linenumber="14">
-          <span class="hits">12</span>
-          
-          <code class="ruby">        params = b</code>
-        </li>
-      
-        <li class="covered" data-hits="12" data-linenumber="15">
-          <span class="hits">12</span>
-          
-          <code class="ruby">        if a.is_a? String</code>
-        </li>
-      
-        <li class="covered" data-hits="5" data-linenumber="16">
+        <li class="covered" data-hits="5" data-linenumber="14">
           <span class="hits">5</span>
           
-          <code class="ruby">          path = a.start_with?('/') ? &quot;#{api_path}#{a}&quot; : &quot;#{api_path}/#{a}&quot;</code>
+          <code class="ruby">        @@api_format = f</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="17">
-          
-          
-          <code class="ruby">        elsif a.is_a? Hash</code>
-        </li>
-      
-        <li class="covered" data-hits="7" data-linenumber="18">
-          <span class="hits">7</span>
-          
-          <code class="ruby">          params = a           </code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="19">
-          
-          
-          <code class="ruby">        end</code>
-        </li>
-      
-        <li class="covered" data-hits="12" data-linenumber="20">
-          <span class="hits">12</span>
-          
-          <code class="ruby">        return params ? [path,URI.encode_www_form(params)].compact.join('?') : path </code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="21">
+        <li class="never" data-hits="" data-linenumber="15">
           
           
           <code class="ruby">      end</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="22">
+        <li class="covered" data-hits="1" data-linenumber="16">
           <span class="hits">1</span>
           
-          <code class="ruby">      protected</code>
+          <code class="ruby">      def api_path_join(a = {},b = nil)</code>
+        </li>
+      
+        <li class="covered" data-hits="16" data-linenumber="17">
+          <span class="hits">16</span>
+          
+          <code class="ruby">        path = api_path</code>
+        </li>
+      
+        <li class="covered" data-hits="16" data-linenumber="18">
+          <span class="hits">16</span>
+          
+          <code class="ruby">        params = b</code>
+        </li>
+      
+        <li class="covered" data-hits="16" data-linenumber="19">
+          <span class="hits">16</span>
+          
+          <code class="ruby">        if a.is_a? String</code>
+        </li>
+      
+        <li class="covered" data-hits="7" data-linenumber="20">
+          <span class="hits">7</span>
+          
+          <code class="ruby">          path = a.start_with?('/') ? &quot;#{path}#{a}&quot; : &quot;#{api_path}/#{a}&quot;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="21">
+          
+          
+          <code class="ruby">        elsif a.is_a? Hash</code>
+        </li>
+      
+        <li class="covered" data-hits="9" data-linenumber="22">
+          <span class="hits">9</span>
+          
+          <code class="ruby">          params = a           </code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="23">
           
           
-          <code class="ruby">      </code>
+          <code class="ruby">        end</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="24">
-          <span class="hits">1</span>
+        <li class="covered" data-hits="16" data-linenumber="24">
+          <span class="hits">16</span>
           
-          <code class="ruby">      def api</code>
+          <code class="ruby">        path = [path,api_format].compact.join('.')  </code>
         </li>
       
-        <li class="covered" data-hits="10" data-linenumber="25">
-          <span class="hits">10</span>
+        <li class="covered" data-hits="16" data-linenumber="25">
+          <span class="hits">16</span>
           
-          <code class="ruby">        EbayClassifieds::ApiConnection</code>
+          <code class="ruby">        return params ? [path,URI.encode_www_form(params)].compact.join('?') : path </code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="26">
@@ -523,19 +593,49 @@
           <code class="ruby">      end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="27">
+        <li class="covered" data-hits="1" data-linenumber="27">
+          <span class="hits">1</span>
           
-          
-          <code class="ruby">    end</code>
+          <code class="ruby">      protected</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="28">
           
           
+          <code class="ruby">      </code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="29">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      def api</code>
+        </li>
+      
+        <li class="covered" data-hits="10" data-linenumber="30">
+          <span class="hits">10</span>
+          
+          <code class="ruby">        EbayClassifieds::ApiConnection</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="31">
+          
+          
+          <code class="ruby">      end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="32">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="33">
+          
+          
           <code class="ruby">  end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="29">
+        <li class="never" data-hits="" data-linenumber="34">
           
           
           <code class="ruby">end</code>
@@ -595,8 +695,8 @@
           <code class="ruby">  def self.api_url</code>
         </li>
       
-        <li class="covered" data-hits="7" data-linenumber="7">
-          <span class="hits">7</span>
+        <li class="covered" data-hits="23" data-linenumber="7">
+          <span class="hits">23</span>
           
           <code class="ruby">    @@api_url</code>
         </li>
@@ -613,8 +713,8 @@
           <code class="ruby">  def self.api_url=(u)</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="10">
-          <span class="hits">2</span>
+        <li class="covered" data-hits="3" data-linenumber="10">
+          <span class="hits">3</span>
           
           <code class="ruby">    @@api_url = u</code>
         </li>
@@ -631,8 +731,8 @@
           <code class="ruby">  def self.api_username</code>
         </li>
       
-        <li class="covered" data-hits="3" data-linenumber="13">
-          <span class="hits">3</span>
+        <li class="covered" data-hits="19" data-linenumber="13">
+          <span class="hits">19</span>
           
           <code class="ruby">    @@api_username</code>
         </li>
@@ -649,8 +749,8 @@
           <code class="ruby">  def self.api_username=(u)</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="16">
-          <span class="hits">2</span>
+        <li class="covered" data-hits="4" data-linenumber="16">
+          <span class="hits">4</span>
           
           <code class="ruby">    @@api_username = u</code>
         </li>
@@ -667,8 +767,8 @@
           <code class="ruby">  def self.api_password</code>
         </li>
       
-        <li class="covered" data-hits="3" data-linenumber="19">
-          <span class="hits">3</span>
+        <li class="covered" data-hits="19" data-linenumber="19">
+          <span class="hits">19</span>
           
           <code class="ruby">    @@api_password</code>
         </li>
@@ -685,8 +785,8 @@
           <code class="ruby">  def self.api_password=(p)</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="22">
-          <span class="hits">2</span>
+        <li class="covered" data-hits="4" data-linenumber="22">
+          <span class="hits">4</span>
           
           <code class="ruby">    @@api_password=p</code>
         </li>
@@ -716,10 +816,10 @@
         <div class="source_table" id="730892bedd70204dd5646806e5af6c1888953e9d">
   <div class="header">
     <h3>lib/ebay_classifieds/models/ad.rb</h3>
-    <h4><span class="green">97.22 %</span> covered</h4>
+    <h4><span class="green">97.3 %</span> covered</h4>
     <div>
-      <b>36</b> relevant lines. 
-      <span class="green"><b>35</b> lines covered</span> and
+      <b>37</b> relevant lines. 
+      <span class="green"><b>36</b> lines covered</span> and
       <span class="red"><b>1</b> lines missed.</span>
     </div>
   </div>
@@ -763,373 +863,379 @@
           <code class="ruby">      api_path '/ads'</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="7">
+        <li class="covered" data-hits="1" data-linenumber="7">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      api_format :xml</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="8">
           
           
           <code class="ruby">      </code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="8">
+        <li class="covered" data-hits="1" data-linenumber="9">
           <span class="hits">1</span>
           
           <code class="ruby">      def initialize(data = {})</code>
         </li>
       
-        <li class="covered" data-hits="307" data-linenumber="9">
+        <li class="covered" data-hits="307" data-linenumber="10">
           <span class="hits">307</span>
           
           <code class="ruby">        data.each do |k,v|</code>
         </li>
       
-        <li class="covered" data-hits="2456" data-linenumber="10">
+        <li class="covered" data-hits="2456" data-linenumber="11">
           <span class="hits">2456</span>
           
           <code class="ruby">          send(&quot;#{k.to_s}=&quot;,v)</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="11">
+        <li class="never" data-hits="" data-linenumber="12">
           
           
           <code class="ruby">          #instance_variable_set(&quot;@#{k.to_s}&quot;,v)</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="12">
+        <li class="never" data-hits="" data-linenumber="13">
           
           
           <code class="ruby">        end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="13">
+        <li class="never" data-hits="" data-linenumber="14">
           
           
           <code class="ruby">      end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="14">
+        <li class="never" data-hits="" data-linenumber="15">
           
           
           <code class="ruby">      </code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="15">
+        <li class="covered" data-hits="1" data-linenumber="16">
           <span class="hits">1</span>
           
           <code class="ruby">      def attributes</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="16">
+        <li class="missed" data-hits="0" data-linenumber="17">
           
           
           <code class="ruby">        @attributes || []</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="17">
+        <li class="never" data-hits="" data-linenumber="18">
           
           
           <code class="ruby">      end</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="18">
+        <li class="covered" data-hits="1" data-linenumber="19">
           <span class="hits">1</span>
           
           <code class="ruby">      def pictures</code>
         </li>
       
-        <li class="covered" data-hits="3" data-linenumber="19">
+        <li class="covered" data-hits="3" data-linenumber="20">
           <span class="hits">3</span>
           
           <code class="ruby">        @pictures || []</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="20">
+        <li class="never" data-hits="" data-linenumber="21">
           
           
           <code class="ruby">      end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="21">
+        <li class="never" data-hits="" data-linenumber="22">
           
           
           <code class="ruby">      </code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="22">
+        <li class="covered" data-hits="1" data-linenumber="23">
           <span class="hits">1</span>
           
           <code class="ruby">      def self.search(params = {})</code>
         </li>
       
-        <li class="covered" data-hits="6" data-linenumber="23">
+        <li class="covered" data-hits="6" data-linenumber="24">
           <span class="hits">6</span>
           
           <code class="ruby">        resp = api.get(api_path_join(params))</code>
         </li>
       
-        <li class="covered" data-hits="6" data-linenumber="24">
+        <li class="covered" data-hits="6" data-linenumber="25">
           <span class="hits">6</span>
           
           <code class="ruby">        data = resp.parsed_response['ads']</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="25">
+        <li class="never" data-hits="" data-linenumber="26">
           
           
           <code class="ruby">        #debugger</code>
         </li>
       
-        <li class="covered" data-hits="6" data-linenumber="26">
+        <li class="covered" data-hits="6" data-linenumber="27">
           <span class="hits">6</span>
           
           <code class="ruby">        EbayClassifieds::PaginatedCollection.new(</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="27">
+        <li class="never" data-hits="" data-linenumber="28">
           
           
           <code class="ruby">          data['ad'].collect do |ad| </code>
         </li>
       
-        <li class="covered" data-hits="300" data-linenumber="28">
+        <li class="covered" data-hits="300" data-linenumber="29">
           <span class="hits">300</span>
           
           <code class="ruby">            new_from_api_data(ad)</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="29">
+        <li class="never" data-hits="" data-linenumber="30">
           
           
           <code class="ruby">          end,</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="30">
+        <li class="never" data-hits="" data-linenumber="31">
           
           
           <code class="ruby">          :page =&gt; params[:page] || 1,</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="31">
+        <li class="never" data-hits="" data-linenumber="32">
           
           
           <code class="ruby">          :per =&gt; params[:size] || 50,</code>
         </li>
       
-        <li class="covered" data-hits="6" data-linenumber="32">
+        <li class="covered" data-hits="6" data-linenumber="33">
           <span class="hits">6</span>
           
           <code class="ruby">          :total =&gt; (data['paging']['numFound'].to_i rescue 0)</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="33">
+        <li class="never" data-hits="" data-linenumber="34">
           
           
           <code class="ruby">        )</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="34">
+        <li class="never" data-hits="" data-linenumber="35">
           
           
           <code class="ruby">      end</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="35">
+        <li class="covered" data-hits="1" data-linenumber="36">
           <span class="hits">1</span>
           
           <code class="ruby">      def self.find(id)</code>
         </li>
       
-        <li class="covered" data-hits="4" data-linenumber="36">
+        <li class="covered" data-hits="4" data-linenumber="37">
           <span class="hits">4</span>
           
           <code class="ruby">        resp = api.get(api_path_join(&quot;/#{id}&quot;))</code>
         </li>
       
-        <li class="covered" data-hits="4" data-linenumber="37">
+        <li class="covered" data-hits="4" data-linenumber="38">
           <span class="hits">4</span>
           
           <code class="ruby">        resp.has_key?('ad') ? new_from_api_data(resp['ad']) : nil</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="38">
+        <li class="never" data-hits="" data-linenumber="39">
           
           
           <code class="ruby">      end</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="39">
+        <li class="covered" data-hits="1" data-linenumber="40">
           <span class="hits">1</span>
           
           <code class="ruby">      def self.new_from_api_data(data)</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="40">
+        <li class="never" data-hits="" data-linenumber="41">
           
           
           <code class="ruby">        </code>
         </li>
       
-        <li class="covered" data-hits="307" data-linenumber="41">
+        <li class="covered" data-hits="307" data-linenumber="42">
           <span class="hits">307</span>
           
           <code class="ruby">          inst = new(:id =&gt; data['id'],</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="42">
+        <li class="never" data-hits="" data-linenumber="43">
           
           
           <code class="ruby">                      :title =&gt; data['title'],</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="43">
+        <li class="never" data-hits="" data-linenumber="44">
           
           
           <code class="ruby">                      :description =&gt; data['description'],</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="44">
+        <li class="never" data-hits="" data-linenumber="45">
           
           
           <code class="ruby">                      :status =&gt; data['ad-status'],</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="45">
+        <li class="never" data-hits="" data-linenumber="46">
           
           
           <code class="ruby">                      :category =&gt; Category.new_from_api_data(data['category']),</code>
         </li>
       
-        <li class="covered" data-hits="307" data-linenumber="46">
+        <li class="covered" data-hits="307" data-linenumber="47">
           <span class="hits">307</span>
           
           <code class="ruby">                      :start_date_time =&gt; (Time.parse(data['start_date_time']) rescue nil),</code>
         </li>
       
-        <li class="covered" data-hits="307" data-linenumber="47">
+        <li class="covered" data-hits="307" data-linenumber="48">
           <span class="hits">307</span>
           
           <code class="ruby">                      :modification_date_time =&gt; (Time.parse(data['modification_date_time']) rescue nil),</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="48">
+        <li class="never" data-hits="" data-linenumber="49">
           
           
           <code class="ruby">                      :address =&gt; AdAddress.new_from_api_data(data['ad-address']))</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="49">
+        <li class="never" data-hits="" data-linenumber="50">
           
           
           <code class="ruby">                      </code>
         </li>
       
-        <li class="covered" data-hits="307" data-linenumber="50">
+        <li class="covered" data-hits="307" data-linenumber="51">
           <span class="hits">307</span>
           
           <code class="ruby">          if data['price'] &amp;&amp; data['price']['amount']</code>
         </li>
       
-        <li class="covered" data-hits="223" data-linenumber="51">
+        <li class="covered" data-hits="223" data-linenumber="52">
           <span class="hits">223</span>
           
           <code class="ruby">            inst.price = data['price']['amount'].to_f</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="52">
+        <li class="never" data-hits="" data-linenumber="53">
           
           
           <code class="ruby">          end</code>
         </li>
       
-        <li class="covered" data-hits="307" data-linenumber="53">
+        <li class="covered" data-hits="307" data-linenumber="54">
           <span class="hits">307</span>
           
           <code class="ruby">          if data['attributes'] &amp;&amp; data['attributes']['attribute']</code>
         </li>
       
-        <li class="covered" data-hits="113" data-linenumber="54">
+        <li class="covered" data-hits="113" data-linenumber="55">
           <span class="hits">113</span>
           
           <code class="ruby">            inst.attributes = AdAttributes.new_from_api_data(data['attributes']['attribute'])</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="55">
+        <li class="never" data-hits="" data-linenumber="56">
           
           
           <code class="ruby">          end</code>
         </li>
       
-        <li class="covered" data-hits="307" data-linenumber="56">
+        <li class="covered" data-hits="307" data-linenumber="57">
           <span class="hits">307</span>
           
           <code class="ruby">          if data['pictures'] &amp;&amp; data['pictures']['picture']</code>
         </li>
       
-        <li class="covered" data-hits="186" data-linenumber="57">
+        <li class="covered" data-hits="186" data-linenumber="58">
           <span class="hits">186</span>
           
           <code class="ruby">            pic_data = data['pictures']['picture']</code>
         </li>
       
-        <li class="covered" data-hits="186" data-linenumber="58">
+        <li class="covered" data-hits="186" data-linenumber="59">
           <span class="hits">186</span>
           
           <code class="ruby">            if pic_data.is_a? Array</code>
         </li>
       
-        <li class="covered" data-hits="696" data-linenumber="59">
+        <li class="covered" data-hits="696" data-linenumber="60">
           <span class="hits">696</span>
           
           <code class="ruby">              inst.pictures = pic_data.collect{|p| Picture.new_from_api_data(p)}.compact</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="60">
+        <li class="never" data-hits="" data-linenumber="61">
           
           
           <code class="ruby">            else</code>
         </li>
       
-        <li class="covered" data-hits="70" data-linenumber="61">
+        <li class="covered" data-hits="70" data-linenumber="62">
           <span class="hits">70</span>
           
           <code class="ruby">              inst.pictures = [Picture.new_from_api_data(pic_data)].compact</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="62">
+        <li class="never" data-hits="" data-linenumber="63">
           
           
           <code class="ruby">            end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="63">
+        <li class="never" data-hits="" data-linenumber="64">
           
           
           <code class="ruby">          end</code>
         </li>
       
-        <li class="covered" data-hits="307" data-linenumber="64">
+        <li class="covered" data-hits="307" data-linenumber="65">
           <span class="hits">307</span>
           
           <code class="ruby">          inst</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="65">
+        <li class="never" data-hits="" data-linenumber="66">
           
           
           <code class="ruby">      end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="66">
+        <li class="never" data-hits="" data-linenumber="67">
           
           
           <code class="ruby">    end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="67">
+        <li class="never" data-hits="" data-linenumber="68">
           
           
           <code class="ruby">  end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="68">
+        <li class="never" data-hits="" data-linenumber="69">
           
           
           <code class="ruby">end</code>
@@ -1960,8 +2066,8 @@
     <h3>spec/api_connection_spec.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
     <div>
-      <b>23</b> relevant lines. 
-      <span class="green"><b>23</b> lines covered</span> and
+      <b>40</b> relevant lines. 
+      <span class="green"><b>40</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
   </div>
@@ -1987,217 +2093,613 @@
           <code class="ruby">describe EbayClassifieds::ApiConnection do</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="4">
+        <li class="covered" data-hits="1" data-linenumber="4">
+          <span class="hits">1</span>
           
-          
-          <code class="ruby">  </code>
+          <code class="ruby">  describe &quot;.default_options&quot; do</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="5">
-          <span class="hits">2</span>
+        <li class="covered" data-hits="4" data-linenumber="5">
+          <span class="hits">4</span>
           
-          <code class="ruby">  its('class.base_uri'){should == EbayClassifieds.api_url}</code>
+          <code class="ruby">    subject{ EbayClassifieds::ApiConnection.default_options }</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="6">
+        <li class="covered" data-hits="1" data-linenumber="6">
+          <span class="hits">1</span>
           
-          
-          <code class="ruby">  </code>
+          <code class="ruby">    context &quot;When changing the api username and password&quot; do</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="7">
           <span class="hits">1</span>
           
-          <code class="ruby">  describe &quot;.get&quot; do</code>
+          <code class="ruby">      before do</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="8">
-          <span class="hits">1</span>
+        <li class="covered" data-hits="2" data-linenumber="8">
+          <span class="hits">2</span>
           
-          <code class="ruby">    context &quot;Given an api path&quot; do</code>
+          <code class="ruby">        @new_username = 'New Username'</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="9">
-          <span class="hits">1</span>
+        <li class="covered" data-hits="2" data-linenumber="9">
+          <span class="hits">2</span>
           
-          <code class="ruby">      before :all do </code>
+          <code class="ruby">        @new_password = 'New Password'</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="10">
-          <span class="hits">1</span>
+        <li class="covered" data-hits="2" data-linenumber="10">
+          <span class="hits">2</span>
           
-          <code class="ruby">        @api_path = '/ads/1'</code>
+          <code class="ruby">        EbayClassifieds.api_username = @new_username</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="11">
-          <span class="hits">1</span>
+        <li class="covered" data-hits="2" data-linenumber="11">
+          <span class="hits">2</span>
           
-          <code class="ruby">        @url = EbayClassifieds.api_url + @api_path</code>
+          <code class="ruby">        EbayClassifieds.api_password = @new_password</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="12">
-          <span class="hits">1</span>
-          
-          <code class="ruby">        @xml = file_fixture('ad-16722980-1_picture.xml')</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="13">
+        <li class="never" data-hits="" data-linenumber="12">
           
           
           <code class="ruby">      end</code>
         </li>
       
-        <li class="covered" data-hits="5" data-linenumber="14">
-          <span class="hits">5</span>
+        <li class="covered" data-hits="1" data-linenumber="13">
+          <span class="hits">1</span>
           
-          <code class="ruby">      before { @api = stub_api_response(:get, @url,:body =&gt; @xml,:content_type =&gt; 'text/xml') }</code>
+          <code class="ruby">      it &quot;should reflect the changed username in the :digest_auth option&quot; do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="14">
+          <span class="hits">1</span>
+          
+          <code class="ruby">        subject[:digest_auth][:username].should == @new_username</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="15">
           
           
-          <code class="ruby">      </code>
+          <code class="ruby">      end</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="16">
           <span class="hits">1</span>
           
-          <code class="ruby">      specify &quot;should call the api with a GET request&quot; do</code>
+          <code class="ruby">      it &quot;should reflect the changed password in the :digest_auth option&quot; do</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="17">
           <span class="hits">1</span>
           
-          <code class="ruby">        @api.should_receive(:call) do |env|</code>
+          <code class="ruby">        subject[:digest_auth][:password].should == @new_password</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="18">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="18">
           
-          <code class="ruby">          env['REQUEST_METHOD'].should == 'GET'</code>
+          
+          <code class="ruby">      end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="19">
           
           
-          <code class="ruby">          # return original expected response</code>
+          <code class="ruby">    end</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="20">
           <span class="hits">1</span>
           
-          <code class="ruby">          @api.response</code>
+          <code class="ruby">    context &quot;When changing the api url&quot; do</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="21">
+        <li class="covered" data-hits="1" data-linenumber="21">
+          <span class="hits">1</span>
           
-          
-          <code class="ruby">        end</code>
+          <code class="ruby">      before do</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="22">
+        <li class="covered" data-hits="1" data-linenumber="22">
+          <span class="hits">1</span>
           
-          
-          <code class="ruby">        #trigger call</code>
+          <code class="ruby">        @old_url = EbayClassifieds.api_url</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="23">
           <span class="hits">1</span>
           
-          <code class="ruby">        EbayClassifieds::ApiConnection.get(@api_path)</code>
+          <code class="ruby">        @new_url = 'http://ebay-api.somewhere.com'</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="24">
+        <li class="covered" data-hits="1" data-linenumber="24">
+          <span class="hits">1</span>
+          
+          <code class="ruby">        EbayClassifieds.api_url = @new_url</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="25">
           
           
           <code class="ruby">      end</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="25">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="26">
           
-          <code class="ruby">      context 'The response' do</code>
+          
+          <code class="ruby">      # after do</code>
         </li>
       
-        <li class="covered" data-hits="4" data-linenumber="26">
-          <span class="hits">4</span>
+        <li class="never" data-hits="" data-linenumber="27">
           
-          <code class="ruby">        let(:response){ EbayClassifieds::ApiConnection.get(@api_path) }</code>
+          
+          <code class="ruby">        # EbayClassifieds.api_url = @old_url</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="27">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="28">
           
-          <code class="ruby">        it &quot;should be a HTTParty::Response&quot; do</code>
+          
+          <code class="ruby">      # end</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="28">
-          <span class="hits">1</span>
+        <li class="covered" data-hits="2" data-linenumber="29">
+          <span class="hits">2</span>
           
-          <code class="ruby">          response.class.should be HTTParty::Response</code>
+          <code class="ruby">      its([:base_uri]){ should == @new_url }</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="29">
+        <li class="never" data-hits="" data-linenumber="30">
           
           
-          <code class="ruby">        end</code>
+          <code class="ruby">    end</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="30">
-          <span class="hits">1</span>
-          
-          <code class="ruby">        it &quot;should should have a code of 200&quot; do </code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="31">
-          <span class="hits">1</span>
-          
-          <code class="ruby">          response.code.should be 200 </code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="32">
-          
-          
-          <code class="ruby">        end       </code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="33">
-          <span class="hits">1</span>
-          
-          <code class="ruby">        it &quot;should have a parsed_response of Hash&quot; do</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="34">
-          <span class="hits">1</span>
-          
-          <code class="ruby">          response.parsed_response.should be_a Hash</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="35">
-          
-          
-          <code class="ruby">        end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="36">
-          
-          
-          <code class="ruby">      end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="37">
-          
-          
-          <code class="ruby">    end </code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="38">
+        <li class="never" data-hits="" data-linenumber="31">
           
           
           <code class="ruby">  end</code>
         </li>
       
+        <li class="never" data-hits="" data-linenumber="32">
+          
+          
+          <code class="ruby">  </code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="33">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  describe &quot;.get&quot; do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="34">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    context &quot;Given an api path&quot; do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="35">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      before :all do </code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="36">
+          <span class="hits">1</span>
+          
+          <code class="ruby">        @api_path = '/ads/1'</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="37">
+          <span class="hits">1</span>
+          
+          <code class="ruby">        @url = EbayClassifieds.api_url + @api_path</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="38">
+          <span class="hits">1</span>
+          
+          <code class="ruby">        @xml = file_fixture('ad-16722980-1_picture.xml')</code>
+        </li>
+      
         <li class="never" data-hits="" data-linenumber="39">
+          
+          
+          <code class="ruby">      end</code>
+        </li>
+      
+        <li class="covered" data-hits="5" data-linenumber="40">
+          <span class="hits">5</span>
+          
+          <code class="ruby">      before { @api = stub_api_response(:get, @url,:body =&gt; @xml,:content_type =&gt; 'text/xml') }</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="41">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      specify &quot;should call the api with a GET request&quot; do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="42">
+          <span class="hits">1</span>
+          
+          <code class="ruby">        @api.should_receive(:call) do |env|</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="43">
+          <span class="hits">1</span>
+          
+          <code class="ruby">          env['REQUEST_METHOD'].should == 'GET'</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="44">
+          
+          
+          <code class="ruby">          # return original expected response</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="45">
+          <span class="hits">1</span>
+          
+          <code class="ruby">          @api.response</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="46">
+          
+          
+          <code class="ruby">        end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="47">
+          
+          
+          <code class="ruby">        #trigger call</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="48">
+          <span class="hits">1</span>
+          
+          <code class="ruby">        EbayClassifieds::ApiConnection.get(@api_path)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="49">
+          
+          
+          <code class="ruby">      end</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="50">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      context 'The response' do</code>
+        </li>
+      
+        <li class="covered" data-hits="4" data-linenumber="51">
+          <span class="hits">4</span>
+          
+          <code class="ruby">        let(:response){ EbayClassifieds::ApiConnection.get(@api_path) }</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="52">
+          <span class="hits">1</span>
+          
+          <code class="ruby">        it &quot;should be a HTTParty::Response&quot; do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="53">
+          <span class="hits">1</span>
+          
+          <code class="ruby">          response.class.should be HTTParty::Response</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="54">
+          
+          
+          <code class="ruby">        end</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="55">
+          <span class="hits">1</span>
+          
+          <code class="ruby">        it &quot;should should have a code of 200&quot; do </code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="56">
+          <span class="hits">1</span>
+          
+          <code class="ruby">          response.code.should be 200 </code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="57">
+          
+          
+          <code class="ruby">        end       </code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="58">
+          <span class="hits">1</span>
+          
+          <code class="ruby">        it &quot;should have a parsed_response of Hash&quot; do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="59">
+          <span class="hits">1</span>
+          
+          <code class="ruby">          response.parsed_response.should be_a Hash</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="60">
+          
+          
+          <code class="ruby">        end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="61">
+          
+          
+          <code class="ruby">      end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="62">
+          
+          
+          <code class="ruby">    end </code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="63">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="64">
+          
+          
+          <code class="ruby">end</code>
+        </li>
+      
+    </ol>
+  </pre>
+</div>
+      
+        <div class="source_table" id="19cfa940740cec70b826fda616fbdb4c2eb25f2b">
+  <div class="header">
+    <h3>spec/api_resource_spec.rb</h3>
+    <h4><span class="green">100.0 %</span> covered</h4>
+    <div>
+      <b>25</b> relevant lines. 
+      <span class="green"><b>25</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
+    </div>
+  </div>
+  
+  <pre>
+    <ol>
+      
+        <li class="covered" data-hits="1" data-linenumber="1">
+          <span class="hits">1</span>
+          
+          <code class="ruby">require 'spec_helper'</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="2">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="3">
+          <span class="hits">1</span>
+          
+          <code class="ruby">class DummyClass</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="4">
+          
+          
+          <code class="ruby">end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="5">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="6">
+          <span class="hits">1</span>
+          
+          <code class="ruby">describe 'EbayClassifieds::ApiResource' do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="7">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  context &quot;When included in a class&quot; do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="8">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    let!(:klass) do</code>
+        </li>
+      
+        <li class="covered" data-hits="4" data-linenumber="9">
+          <span class="hits">4</span>
+          
+          <code class="ruby">      c = DummyClass</code>
+        </li>
+      
+        <li class="covered" data-hits="4" data-linenumber="10">
+          <span class="hits">4</span>
+          
+          <code class="ruby">      c.send(:include, EbayClassifieds::ApiResource)</code>
+        </li>
+      
+        <li class="covered" data-hits="4" data-linenumber="11">
+          <span class="hits">4</span>
+          
+          <code class="ruby">      c.api_path('/api_path')</code>
+        </li>
+      
+        <li class="covered" data-hits="4" data-linenumber="12">
+          <span class="hits">4</span>
+          
+          <code class="ruby">      c.api_format(:api_format)</code>
+        </li>
+      
+        <li class="covered" data-hits="4" data-linenumber="13">
+          <span class="hits">4</span>
+          
+          <code class="ruby">      c</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="14">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="15">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    describe &quot;.api_path_join&quot; do</code>
+        </li>
+      
+        <li class="covered" data-hits="3" data-linenumber="16">
+          <span class="hits">3</span>
+          
+          <code class="ruby">      let(:additional_path) { '/additional/path' }</code>
+        </li>
+      
+        <li class="covered" data-hits="3" data-linenumber="17">
+          <span class="hits">3</span>
+          
+          <code class="ruby">      let(:parameters) { {:param1 =&gt; 'param1-value', :param2 =&gt; 'param2-value'} }</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="18">
+          
+          
+          <code class="ruby">      </code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="19">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      context &quot;when given no arguments&quot; do</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="20">
+          <span class="hits">2</span>
+          
+          <code class="ruby">        subject { klass.api_path_join }</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="21">
+          <span class="hits">2</span>
+          
+          <code class="ruby">        it { should == &quot;/api_path.api_format&quot; }</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="22">
+          
+          
+          <code class="ruby">      end</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="23">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      context &quot;when given a string of additional/path&quot; do</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="24">
+          <span class="hits">2</span>
+          
+          <code class="ruby">        subject { klass.api_path_join(additional_path) }</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="25">
+          <span class="hits">2</span>
+          
+          <code class="ruby">        it { should == &quot;/api_path/additional/path.api_format&quot; }</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="26">
+          
+          
+          <code class="ruby">      end</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="27">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      context &quot;when given a hash of parameters&quot; do</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="28">
+          <span class="hits">2</span>
+          
+          <code class="ruby">        subject { klass.api_path_join(parameters) }</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="29">
+          <span class="hits">2</span>
+          
+          <code class="ruby">        it { should == &quot;/api_path.api_format?param1=param1-value&amp;param2=param2-value&quot; }</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="30">
+          
+          
+          <code class="ruby">      end</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="31">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      context &quot;when given both a string of additional/path and a hash of parameters&quot; do</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="32">
+          <span class="hits">2</span>
+          
+          <code class="ruby">        subject { klass.api_path_join(additional_path,parameters) }</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="33">
+          <span class="hits">2</span>
+          
+          <code class="ruby">        it { should == &quot;/api_path/additional/path.api_format?param1=param1-value&amp;param2=param2-value&quot; }</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="34">
+          
+          
+          <code class="ruby">      end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="35">
+          
+          
+          <code class="ruby">      </code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="36">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="37">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="38">
           
           
           <code class="ruby">end</code>

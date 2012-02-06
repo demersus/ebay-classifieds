@@ -4,6 +4,7 @@ module EbayClassifieds
       attr_accessor(:price, :locations, :status, :id, :title, :address, :attributes, :description, :category, :pictures, :modification_date_time, :start_date_time)
       include EbayClassifieds::ApiResource
       api_path '/ads'
+      api_format :xml
       
       def initialize(data = {})
         data.each do |k,v|
