@@ -5,11 +5,11 @@
 
 Gem::Specification.new do |s|
   s.name = "ebay-classifieds"
-  s.version = "0.1.2"
+  s.version = "0.1.3"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Nik Petersen"]
-  s.date = "2012-02-04"
+  s.date = "2012-02-06"
   s.description = ""
   s.email = "demersus@gmail.com"
   s.extra_rdoc_files = [
@@ -89,6 +89,7 @@ Gem::Specification.new do |s|
     "lib/ebay_classifieds/models/picture.rb",
     "lib/ebay_classifieds/paginated_collection.rb",
     "spec/api_connection_spec.rb",
+    "spec/api_resource_spec.rb",
     "spec/ebay_classifieds_spec.rb",
     "spec/fixtures/ad-12481583-many_pictures.xml",
     "spec/fixtures/ad-16722980-1_picture.xml",
