@@ -52,15 +52,16 @@ module EbayClassifieds
             inst.price = data['price']['amount'].to_f
           end
           if data['attributes'] && data['attributes']['attribute']
-            inst.attributes = AdAttributes.new_from_api_data(data['attributes']['attribute'])
+            inst.attributes = [data['attributes']['attribute']].flatten.inject({}) do |hash,attr|
+              hash[attr['name']] = {:name => attr['localized_label'], :value => attr['value']}
+              hash
+            end
           end
           if data['pictures'] && data['pictures']['picture']
             pic_data = data['pictures']['picture']
-            if pic_data.is_a? Array
-              inst.pictures = pic_data.collect{|p| Picture.new_from_api_data(p)}.compact
-            else
-              inst.pictures = [Picture.new_from_api_data(pic_data)].compact
-            end
+            inst.pictures = [pic_data].flatten.collect{|p|
+              Picture.new_from_api_data(p)
+             }.compact
           end
           inst
       end

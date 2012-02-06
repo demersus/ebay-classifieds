@@ -6,6 +6,4 @@ require 'ebay_classifieds/models/ad'
 require 'ebay_classifieds/models/category'
 require 'ebay_classifieds/models/picture'
 require 'ebay_classifieds/models/ad_address'
-require 'ebay_classifieds/models/ad_attributes'
-require 'ebay_classifieds/models/ad_attribute'
 
