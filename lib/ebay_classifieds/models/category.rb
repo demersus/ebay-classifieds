@@ -1,8 +1,10 @@
 module EbayClassifieds
   module Models
-    class Category < Struct.new(:id,:name)
+    class Category
+      attr_accessor(:id,:name)
+      include AttributeInitializer
       def self.new_from_api_data(data)
-        new(data)
+        new(:id => data['id'],:name => data['localized_name'])
       end     
     end
   end
