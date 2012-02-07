@@ -5,11 +5,11 @@
 
 Gem::Specification.new do |s|
   s.name = "ebay-classifieds"
-  s.version = "0.1.3"
+  s.version = "0.3.1"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Nik Petersen"]
-  s.date = "2012-02-06"
+  s.date = "2012-02-07"
   s.description = ""
   s.email = "demersus@gmail.com"
   s.extra_rdoc_files = [
@@ -83,8 +83,7 @@ Gem::Specification.new do |s|
     "lib/ebay_classifieds/ebay_classifieds.rb",
     "lib/ebay_classifieds/models/ad.rb",
     "lib/ebay_classifieds/models/ad_address.rb",
-    "lib/ebay_classifieds/models/ad_attribute.rb",
-    "lib/ebay_classifieds/models/ad_attributes.rb",
+    "lib/ebay_classifieds/models/attribute_initializer.rb",
     "lib/ebay_classifieds/models/category.rb",
     "lib/ebay_classifieds/models/picture.rb",
     "lib/ebay_classifieds/paginated_collection.rb",
@@ -95,7 +94,11 @@ Gem::Specification.new do |s|
     "spec/fixtures/ad-16722980-1_picture.xml",
     "spec/fixtures/ad-16723048-no_pictures.xml",
     "spec/fixtures/ads.xml",
+    "spec/fixtures/categories.xml",
+    "spec/fixtures/category-100012.xml",
+    "spec/models/ad_address_spec.rb",
     "spec/models/ad_spec.rb",
+    "spec/models/category_spec.rb",
     "spec/spec_helper.rb",
     "spec/support/testing.rb"
   ]
