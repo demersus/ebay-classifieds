@@ -20,11 +20,11 @@ module EbayClassifieds
         inst
       end
       def self.all
-        resp = api.get(api_path_join)
+        resp = api_get(api_path_join)
         new_from_api_data(resp['categories']['category'])
       end
       def self.find(id)
-        resp = api.get(api_path_join("/#{id}"))
+        resp = api_get(api_path_join("/#{id}"))
         new_from_api_data(resp['category'])
       end     
     end

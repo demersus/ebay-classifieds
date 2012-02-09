@@ -1,4 +1,5 @@
 require 'ebay_classifieds/ebay_classifieds'
+require 'ebay_classifieds/exceptions/http_error'
 require 'ebay_classifieds/api_connection'
 require 'ebay_classifieds/paginated_collection'
 require 'ebay_classifieds/api_resource'

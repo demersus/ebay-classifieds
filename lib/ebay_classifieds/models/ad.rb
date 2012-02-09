@@ -15,7 +15,7 @@ module EbayClassifieds
       end
       
       def self.search(params = {})
-        resp = api.get(api_path_join(params))
+        resp = api_get(api_path_join(params))
         data = resp.parsed_response['ads']
         #debugger
         EbayClassifieds::PaginatedCollection.new(
@@ -28,7 +28,7 @@ module EbayClassifieds
         )
       end
       def self.find(id)
-        resp = api.get(api_path_join("/#{id}"))
+        resp = api_get(api_path_join("/#{id}"))
         resp.has_key?('ad') ? new_from_api_data(resp['ad']) : nil
       end
       def self.new_from_api_data(data)
