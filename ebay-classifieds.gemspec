@@ -5,7 +5,7 @@
 
 Gem::Specification.new do |s|
   s.name = "ebay-classifieds"
-  s.version = "0.4.0"
+  s.version = "0.4.1"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Nik Petersen"]
@@ -43,6 +43,7 @@ Gem::Specification.new do |s|
     "spec/fixtures/ad-12481583-many_pictures.xml",
     "spec/fixtures/ad-16722980-1_picture.xml",
     "spec/fixtures/ad-16723048-no_pictures.xml",
+    "spec/fixtures/ads-empty.xml",
     "spec/fixtures/ads.xml",
     "spec/fixtures/categories.xml",
     "spec/fixtures/category-100012.xml",
@@ -50,6 +51,7 @@ Gem::Specification.new do |s|
     "spec/models/ad_spec.rb",
     "spec/models/category_spec.rb",
     "spec/spec_helper.rb",
+    "spec/support/shared_api.rb",
     "spec/support/testing.rb"
   ]
   s.homepage = "http://github.com/demersus/ebay-classifieds"
