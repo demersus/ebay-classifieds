@@ -99,6 +99,31 @@ describe EbayClassifieds::Models::Ad do
         end
       end
     end
+    context "Given paremters that will return 0 results" do
+      before :all do
+        @search_params = {:q => 'contains no ads'}
+        @url = EbayClassifieds.api_url + EbayClassifieds::Models::Ad.api_path_join(@search_params)
+        @xml = file_fixture('ads-empty.xml')
+      end
+      
+      before :each do
+        @api = stub_api_response(:get, @url,
+                                   :body =>@xml,
+                                   :content_type => 'text/xml')
+      end 
+      
+      subject { EbayClassifieds::Models::Ad.search(@search_params) }
+      
+      it_behaves_like 'a GET request'
+      
+      describe "The Result" do
+        
+        it {should be_a EbayClassifieds::PaginatedCollection}
+        its(:total){ should be 0 }
+        its(:collection) { should be_empty }
+                
+      end
+    end
   end
   describe '.find' do
     context "Given an ad id" do
@@ -107,33 +132,46 @@ describe EbayClassifieds::Models::Ad do
         @url = EbayClassifieds.api_url + EbayClassifieds::Models::Ad.api_path_join(@id.to_s)
         @xml = file_fixture('ad-16722980-1_picture.xml')
       end
+      
       before :each do
         @api = stub_api_response(:get, @url,
                                    :body => @xml,
                                    :content_type => 'text/xml')
       end
             
+      subject{ EbayClassifieds::Models::Ad.find(@id) } 
+           
+      it_behaves_like 'a GET request'
+      
+      
       it "should call .new_from_api_data with a hash to load the model" do
         EbayClassifieds::Models::Ad.should_receive(:new_from_api_data).with(kind_of(Hash))
-        EbayClassifieds::Models::Ad.find(@id)
+        subject 
       end
+          
       
-      
-      it "should call the api with a GET request" do
-        @api.should_receive(:call) do |env|
-          env['REQUEST_METHOD'].should == 'GET'
-          @api.response
-        end
-        EbayClassifieds::Models::Ad.find(@id)
-      end
-      
-      context "The result" do
-        subject{ EbayClassifieds::Models::Ad.find(@id) }
-              
+      context "The result" do                      
         it { should be_a EbayClassifieds::Models::Ad }
         its('id.to_s') { should == @id.to_s }     
       end
     end
-    
+    context "Given an invalid ad id" do
+      before do
+        @id = 0
+        @url = EbayClassifieds.api_url + EbayClassifieds::Models::Ad.api_path_join(@id.to_s)
+        @api = stub_api_response(:get, @url,
+                                   :body => "",
+                                   :content_type => 'text/xml',
+                                   :code => 404)
+      end
+      subject{ EbayClassifieds::Models::Ad.find(@id) }
+      
+      it_behaves_like 'a GET request'
+      
+      describe "The result" do
+        it{ should be_nil }
+      end
+      
+    end
   end
 end

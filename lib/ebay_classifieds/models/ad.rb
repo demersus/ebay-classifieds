@@ -17,11 +17,9 @@ module EbayClassifieds
       def self.search(params = {})
         resp = api_get(api_path_join(params))
         data = resp.parsed_response['ads']
-        raise "Unknown Data structure!: #{resp}" unless data && data['ad']
+        raise "Unknown Data structure!: #{resp}" unless data
         EbayClassifieds::PaginatedCollection.new(
-          data['ad'].collect do |ad| 
-            new_from_api_data(ad)
-          end,
+          (data['ad'] ? data['ad'].collect{ |ad| new_from_api_data(ad) } : []),
           :page => params[:page] || 1,
           :per => params[:size] || 50,
           :total => (data['paging']['numFound'].to_i rescue 0)
@@ -31,6 +29,9 @@ module EbayClassifieds
         resp = api_get(api_path_join("/#{id}"))
         raise "Unknown Data structure!: #{resp}" unless resp && resp['ad']
         resp.has_key?('ad') ? new_from_api_data(resp['ad']) : nil
+      rescue Exceptions::HttpError => e
+        raise e unless e.response.code == 404
+        nil
       end
       def self.new_from_api_data(data)
         

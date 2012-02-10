@@ -42,10 +42,6 @@ GEM
       ruby-debug-base19 (>= 0.11.19)
     ruby_core_source (0.1.5)
       archive-tar-minitar (>= 0.5.2)
-    simplecov (0.5.4)
-      multi_json (~> 1.0.3)
-      simplecov-html (~> 0.5.3)
-    simplecov-html (0.5.3)
     webmock (1.7.10)
       addressable (~> 2.2, > 2.2.5)
       crack (>= 0.1.7)
@@ -62,5 +58,4 @@ DEPENDENCIES
   rdoc (~> 3.12)
   rspec (~> 2.8.0)
   ruby-debug19
-  simplecov
   webmock

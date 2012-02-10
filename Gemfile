@@ -14,7 +14,6 @@ group :development,:test do
   gem "jeweler", "~> 1.8.3"
   gem "ruby-debug19"
   gem "rspec", "~> 2.8.0"
-  gem "simplecov", ">= 0"
   gem 'rack'
   gem 'webmock'
   # gem 'mongrel', '1.2.0.pre2'
