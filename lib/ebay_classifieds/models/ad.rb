@@ -1,9 +1,9 @@
 module EbayClassifieds
   module Models
-    class Ad  
+    class Ad 
       attr_accessor(:price, :locations, :status, :id, :title, :address, :attributes, :description, :category, :pictures, :modification_date_time, :start_date_time)
-      include EbayClassifieds::ApiResource
       include AttributeInitializer
+      include EbayClassifieds::ApiResource
       api_path '/ads'
       api_format :xml
             
@@ -17,7 +17,7 @@ module EbayClassifieds
       def self.search(params = {})
         resp = api_get(api_path_join(params))
         data = resp.parsed_response['ads']
-        #debugger
+        raise "Unknown Data structure!: #{resp}" unless data && data['ad']
         EbayClassifieds::PaginatedCollection.new(
           data['ad'].collect do |ad| 
             new_from_api_data(ad)
@@ -29,6 +29,7 @@ module EbayClassifieds
       end
       def self.find(id)
         resp = api_get(api_path_join("/#{id}"))
+        raise "Unknown Data structure!: #{resp}" unless resp && resp['ad']
         resp.has_key?('ad') ? new_from_api_data(resp['ad']) : nil
       end
       def self.new_from_api_data(data)

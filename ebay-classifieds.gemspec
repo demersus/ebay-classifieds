@@ -81,6 +81,7 @@ Gem::Specification.new do |s|
     "lib/ebay_classifieds/api_connection.rb",
     "lib/ebay_classifieds/api_resource.rb",
     "lib/ebay_classifieds/ebay_classifieds.rb",
+    "lib/ebay_classifieds/exceptions/http_error.rb",
     "lib/ebay_classifieds/models/ad.rb",
     "lib/ebay_classifieds/models/ad_address.rb",
     "lib/ebay_classifieds/models/attribute_initializer.rb",

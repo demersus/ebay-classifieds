@@ -21,10 +21,12 @@ module EbayClassifieds
       end
       def self.all
         resp = api_get(api_path_join)
+        raise "Unknown Data structure!: #{resp}" unless resp && resp['categories']
         new_from_api_data(resp['categories']['category'])
       end
       def self.find(id)
         resp = api_get(api_path_join("/#{id}"))
+        raise "Unknown Data structure!: #{resp}" unless resp && resp['category']
         new_from_api_data(resp['category'])
       end     
     end

@@ -6,12 +6,12 @@ module EbayClassifieds
     module ClassMethods
       
       def api_path(ep = nil)
-        return @@api_path unless ep
-        @@api_path = ep
+        return @api_path unless ep
+        @api_path = ep
       end
       def api_format(f = nil)
-        return @@api_format unless f
-        @@api_format = f
+        return @api_format unless f
+        @api_format = f
       end
       def api_path_join(a = {},b = nil)
         path = api_path
@@ -29,7 +29,6 @@ module EbayClassifieds
       def api_get(*args)
         resp = EbayClassifieds::ApiConnection.get(*args)
         raise Exceptions::HttpError.new(resp) unless resp.code < 400
-        resp
       end
     end
   end
