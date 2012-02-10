@@ -13,4 +13,9 @@ class EbayClassifieds::ApiConnection
     })
   end
   
+  # def self.get(*args)
+    # debugger
+    # super(*args)
+  # end
+  
 end

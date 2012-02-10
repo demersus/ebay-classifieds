@@ -29,6 +29,7 @@ module EbayClassifieds
       def api_get(*args)
         resp = EbayClassifieds::ApiConnection.get(*args)
         raise Exceptions::HttpError.new(resp) unless resp.code < 400
+        resp
       end
     end
   end
