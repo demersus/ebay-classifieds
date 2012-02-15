@@ -33,6 +33,9 @@ describe EbayClassifieds::Models::Ad do
           EbayClassifieds::Models::Category.should_receive('new_from_api_data').with(many_pics_data['ad']['category'])
           returned # trigger
         end
+        it { should respond_to(:url) }
+        its(:url){ should_not be_nil }
+        
         its(:category){ should be_a EbayClassifieds::Models::Category }
                      
       end
