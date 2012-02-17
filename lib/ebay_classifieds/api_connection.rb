@@ -1,7 +1,7 @@
 require 'httparty'
 class EbayClassifieds::ApiConnection
   include HTTParty
-  debug_output
+  #debug_output
   # Merge settings from base module
   def self.default_options
     (@default_options || {}).merge({
