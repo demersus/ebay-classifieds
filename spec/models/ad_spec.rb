@@ -94,7 +94,7 @@ describe EbayClassifieds::Models::Ad do
         it { should be_a EbayClassifieds::PaginatedCollection }
         it { should have(50).items }
       
-        its(:page){ should == 1 }
+        its(:page){ should == 0 } # Ebay's paging starts with 0
         its(:total){ should be >= 50 }      
         
         it "should contain ad resources" do

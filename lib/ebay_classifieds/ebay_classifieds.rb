@@ -1,7 +1,8 @@
+require 'logger'
 module EbayClassifieds
   @@api_url = "http://webapi.ebayclassifieds.com/webapi"
   @@api_username = 'TEST'
-  @@api_password = 'TEST'
+  @@api_password = 'TEST'  
   
   def self.api_url
     @@api_url
@@ -20,6 +21,12 @@ module EbayClassifieds
   end
   def self.api_password=(p)
     @@api_password=p
+  end
+  def self.logger=(l)
+    @@logger = l
+  end
+  def self.logger
+    @@logger ||= Logger.new(STDOUT)
   end
   
 end

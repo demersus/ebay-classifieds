@@ -22,4 +22,13 @@ describe "EbayClassifieds" do
     EbayClassifieds.api_password = 'abc'
     EbayClassifieds.api_password.should_not eq @original_password
   end
+  it "has a logger instance by default" do
+    EbayClassifieds.logger.should be_a Logger 
+  end
+  specify "the logger can be set manually with #logger=" do
+    logger = Logger.new(STDOUT)
+    EbayClassifieds.logger = logger
+    EbayClassifieds.logger.should be logger
+  end
+  
 end

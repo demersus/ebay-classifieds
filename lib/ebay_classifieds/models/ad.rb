@@ -23,7 +23,7 @@ module EbayClassifieds
         raise "Unknown Data structure!: #{resp}" unless data
         EbayClassifieds::PaginatedCollection.new(
           (data['ad'] ? data['ad'].collect{ |ad| new_from_api_data(ad) } : []),
-          :page => params[:page] || 1,
+          :page => params[:page] || 0,
           :per => params[:size] || 50,
           :total => (data['paging']['numFound'].to_i rescue 0)
         )

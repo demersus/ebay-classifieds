@@ -1,7 +1,7 @@
 require 'httparty'
 class EbayClassifieds::ApiConnection
   include HTTParty
-  
+  debug_output
   # Merge settings from base module
   def self.default_options
     (@default_options || {}).merge({
@@ -11,11 +11,5 @@ class EbayClassifieds::ApiConnection
         :password => EbayClassifieds.api_password
       }
     })
-  end
-  
-  # def self.get(*args)
-    # debugger
-    # super(*args)
-  # end
-  
+  end  
 end

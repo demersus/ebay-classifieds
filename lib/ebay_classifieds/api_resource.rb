@@ -27,6 +27,7 @@ module EbayClassifieds
       protected
       
       def api_get(*args)
+        EbayClassifieds.logger.info("EbayClassifieds: GET: #{args.to_s}")
         resp = EbayClassifieds::ApiConnection.get(*args)
         raise Exceptions::HttpError.new(resp) unless resp.code < 400
         resp
