@@ -10,7 +10,7 @@ Gem::Specification.new do |s|
   s.email        = "demersus@gmail.com"
   s.homepage     = "https://github.com/demersus/ebay-classifieds"
   s.summary      = "an ORM to interface with the ebay classifieds api"
-  s.description  = "[TODO: description]"
+  s.description  = "an ORM to interface with the ebay classifieds api"
 
   s.files        = `git ls-files lib`.split("\n")
   s.platform     = Gem::Platform::RUBY
