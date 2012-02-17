@@ -1,6 +1,5 @@
 require 'logger'
 module EbayClassifieds
-  VERSION = "0.5.1"
   @@api_url = "http://webapi.ebayclassifieds.com/webapi"
   @@api_username = 'TEST'
   @@api_password = 'TEST'  
