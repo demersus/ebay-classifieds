@@ -1,7 +1,7 @@
 module EbayClassifieds
   module Models
     class Ad 
-      attr_accessor :price, :locations, :status, :url,
+      attr_accessor :price, :locations, :status, :url, :phone,
                     :id, :title, :address, :attributes, 
                     :description, :category, :pictures, 
                     :modification_date_time, :start_date_time
@@ -46,7 +46,8 @@ module EbayClassifieds
                       :category => Category.new_from_api_data(data['category']),
                       :start_date_time => (Time.parse(data['start_date_time']) rescue nil),
                       :modification_date_time => (Time.parse(data['modification_date_time']) rescue nil),
-                      :address => AdAddress.new_from_api_data(data['ad_address']))            
+                      :address => AdAddress.new_from_api_data(data['ad_address']),
+                      :phone => data['phone'])            
           if data['price'] && data['price']['amount']
             inst.price = data['price']['amount'].to_f
           end
